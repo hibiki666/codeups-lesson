@@ -1,0 +1,52 @@
+@use "global" as *;
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: rem(13) 0 rem(13) rem(32);
+  background: rgba(0, 0, 0, 0.5);
+  &__logo {
+
+  }
+
+  &__logo-link {
+    
+  }
+
+  &__logo-link {
+    font-family: 'Playlist', serif;
+    color: #fff;
+    font-size: rem(30);
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-item {
+    margin-right: rem(32);
+  }
+
+  &__nav-item > a {
+    font-size: rem(16);
+    color: #fff;
+  }
+
+  &__contact-linkwrap {
+    background-color: #fff;
+    display: block;
+    height: auto;
+  }
+
+  &__contact-link {
+    font-size: rem(16);
+  }
+}
