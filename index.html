@@ -26,7 +26,8 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- JavaScript -->
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   </head>
   <body>
     <!-- ヘッダー -->
@@ -75,7 +76,63 @@
     <!-- ハンバーガーメニュー -->
     <!-- ハンバーガーメニュー -->
 
+    <div class="mv">
+      <div class="mv__wrap">
+        <!-- swiper -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img src="src/images/common/mv-image1.jpg" alt="img1">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img src="src/images/common/mv-image2.jpg" alt="img2">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img src="src/images/common/mv-image3.jpg" alt="img3">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- swiper -->
+        <!-- mv__title-wrap -->
+        <div class="mv__title-wrap">
+          <h2 class="mv__title">メインタイトルが入ります</h2>
+          <p class="mv__title-text">サブタイトルが入ります</p>
+        </div>
+        <!-- mv__title-wrap -->
+        <div class="inner">
+          <!-- mv__article-wrap -->
+          <div class="mv__article-wrap">
+            <!-- mv__article-datewrap -->
+            <div class="mv__article-datewrap">
+              <p class="mv__article-date">2020.07.20</p>
+              <p class="mv__article-tag">お知らせ</p>
+            </div>
+            <!-- mv__article-datewrap -->
+            <!-- mv__article-titlewrap -->
+            <div class="mv__article-titlewrap">
+              <h3 class="mv__article-title">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</h3>
+            </div>
+            <!-- mv__article-titlewrap -->
+            <div class="mv__article-linkwrap">
+              <a href="#" class="mv__article-link">すべて見る</a>
+            </div>
+          </div>
+          <!-- mv__article-wrap -->
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
     <script defer src="./js/script.js"></script>
   </body>
 </html>

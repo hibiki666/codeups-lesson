@@ -1,6 +1,8 @@
 @charset "UTF-8";
 body {
   font-family: "Noto Sans JP", sans-serif;
+  background: #111;
+  color: #fff;
 }
 
 .u-desktop {
@@ -196,6 +198,7 @@ select::-ms-expand {
 }
 
 .drawer {
+  z-index: 100;
   position: fixed;
   width: 100%;
   padding: 11px 20px;
@@ -218,6 +221,7 @@ select::-ms-expand {
   color: #fff;
 }
 .drawer__icon {
+  z-index: 101;
   position: fixed;
   width: 24px;
   width: 1.5rem;
@@ -319,6 +323,7 @@ select::-ms-expand {
     height: 3.125rem;
     background: rgba(0, 0, 0, .5);
     padding-left: 2rem;
+    z-index: 100;
   }
 }
 .header__logo-link {
@@ -399,5 +404,175 @@ select::-ms-expand {
   padding-left: 2rem;
   padding-right: 32px;
   padding-right: 2rem;
+  color: #111;
+}
+
+@-webkit-keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+
+@keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img {
+  -webkit-animation: zoomUp 10s linear 0s 1 normal both;
+          animation: zoomUp 10s linear 0s 1 normal both;
+}
+
+.slide-img img {
+  display: block;
+  height: 100vh;
+}
+
+.mv {
+  position: relative;
+}
+.mv__title-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 10;
+}
+.mv__title {
+  font-size: 28px;
+  font-size: 1.75rem;
+  white-space: nowrap;
+}
+.mv__title-text {
+  font-size: 20px;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+.mv__article-wrap {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .mv__article-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.mv__article-datewrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .mv__article-datewrap {
+    margin-right: 3.8125rem;
+  }
+}
+.mv__article-date {
+  margin-right: 32px;
+  margin-right: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .mv__article-date {
+    margin-right: 3rem;
+  }
+}
+.mv__article-tag {
+  font-size: 14px;
+  font-size: 0.875rem;
+  border: 1px solid #fff;
+  padding-top: 5px;
+  padding-top: 0.3125rem;
+  padding-right: 21px;
+  padding-right: 1.3125rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.3125rem;
+  padding-left: 21px;
+  padding-left: 1.3125rem;
+  white-space: nowrap;
+}
+.mv__article-titlewrap {
+  margin-top: 20px;
+  margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .mv__article-titlewrap {
+    margin-top: 0;
+    margin-right: 2.5625rem;
+  }
+}
+.mv__article-title {
+  line-height: 1.438;
+  font-weight: 300;
+}
+.mv__article-linkwrap {
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+}
+@media screen and (min-width: 600px) {
+  .mv__article-linkwrap {
+    margin-top: 1.75rem;
+    border: 1px solid #fff;
+    background-color: #333333;
+    text-align: center;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mv__article-linkwrap {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 8.375rem;
+    white-space: nowrap;
+    background-color: #fff;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mv__article-linkwrap:hover {
+    background-color: #333333;
+    border: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mv__article-linkwrap:hover > a {
+    color: #fff;
+  }
+}
+.mv__article-link {
+  font-size: 20px;
+  font-size: 1.25rem;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .mv__article-link {
+    color: #111;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

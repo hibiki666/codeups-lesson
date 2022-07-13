@@ -8,6 +8,7 @@
     height: rem(50);
     background: rgba(0, 0, 0, 0.5);
     padding-left: rem(32);
+    z-index: 100;
   }
   &__logo {
   }
@@ -66,7 +67,6 @@
   &__contact-linkwrap {
     background-color: #fff;
     display: block;
-    // width: rem(120);
     height: 100%;
   }
 
@@ -78,5 +78,6 @@
     letter-spacing: 2px;
     padding-left: rem(32);
     padding-right: rem(32);
+    color: $black;
   }
 }
