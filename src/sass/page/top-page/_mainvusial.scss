@@ -1,1 +1,135 @@
 @use "global" as *;
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img{
+  animation: zoomUp 10s linear 0s 1 normal both;
+}
+
+.slide-img img{
+  display: block;
+  height: 100vh;
+}
+
+.mv {
+  position: relative;
+  &__wrap {
+
+  }
+
+  &__title-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 10;
+  }
+
+  &__title {
+    font-size: rem(28);
+    white-space: nowrap;
+  }
+
+  &__title-text {
+    font-size: rem(20);
+    text-align: center;
+    margin-top: rem(24);
+  }
+
+  &__article-wrap {
+    margin-top: rem(24);
+    @include mq("md") {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__article-datewrap {
+    display: flex;
+    align-items: center;
+    @include mq("md") {
+      margin-right: rem(61);
+    }
+  }
+
+  &__article-date {
+    margin-right: rem(32);
+    @include mq("md") {
+      margin-right: rem(48);
+    }
+  }
+
+  &__article-tag {
+    font-size: rem(14);
+    border: 1px solid #fff;
+    padding-top: rem(5);
+    padding-right: rem(21);
+    padding-bottom: rem(5);
+    padding-left: rem(21);
+    white-space: nowrap;
+  }
+
+  &__article-titlewrap {
+    margin-top: rem(20);
+    @include mq("md") {
+      margin-top: 0;
+      margin-right: rem(41);
+    }
+  }
+
+&__article-title {
+  line-height: 1.438;
+  font-weight: $regular;
+}
+
+&__article-linkwrap {
+  transition: ease all .3s;
+  @include mq("sm") {
+    margin-top: rem(28);
+    border: 1px solid #fff;
+    background-color: #333333;
+    text-align: center;
+    padding-top: rem(10);
+    padding-bottom: rem(10);
+  }
+  @include mq("md") {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: rem(134);
+    white-space: nowrap;
+    background-color: #fff;
+  }
+}
+
+&__article-linkwrap:hover {
+  @include mq("md") {
+    background-color: #333333;
+    border: none;
+  }
+  & > a {
+    @include mq("md") {
+      color: #fff;
+    }
+  }
+}
+
+&__article-link {
+  font-size: rem(20);
+  display: block;
+  height: 100%;
+  width: 100%;
+  @include mq("md") {
+    color: $black;
+  }
+}
+}
