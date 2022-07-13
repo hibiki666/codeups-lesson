@@ -1,0 +1,120 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.content {
+  margin-top: 150px;
+  margin-top: 9.375rem;
+}
+.content__titlewrap {
+  text-align: center;
+}
+.content__title {
+  font-weight: 300;
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 768px) {
+  .content__title {
+    font-size: 1.875rem;
+  }
+}
+.content__title-text {
+  font-size: 50px;
+  font-size: 3.125rem;
+  color: #F9F871;
+  letter-spacing: 2px;
+  z-index: -1;
+  opacity: 0.5;
+  font-family: "Noto Serif JP", serif;
+  margin-top: -85px;
+  margin-top: -5.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .content__title-text {
+    font-size: 6.875rem;
+    text-align: left;
+  }
+}
+.content__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+  margin-top: 3.125rem;
+}
+@media screen and (min-width: 768px) {
+  .content__list {
+    margin-top: -2rem;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+.content__item {
+  width: 50%;
+  height: 168px;
+  height: 10.5rem;
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .content__item {
+    width: 100%;
+    height: 20rem;
+  }
+}
+.content__item:hover {
+  opacity: 0.6;
+}
+.content__item:nth-child(1) {
+  background-image: url(/src/images/common/contenr-image1.jpg);
+  background-size: cover;
+}
+.content__item:nth-child(2) {
+  background-image: url(/src/images/common/content-image2.jpg);
+  background-size: cover;
+}
+.content__item:nth-child(3) {
+  background-image: url(/src/images/common/content-image3.jpg);
+  background-size: cover;
+}
+.content__item:nth-child(4) {
+  background-image: url(/src/images/common/content-image4.jpg);
+  background-size: cover;
+}
+.content__item-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.content__item-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+/*# sourceMappingURL=content.css.map */
