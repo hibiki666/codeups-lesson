@@ -1,0 +1,23 @@
+@use "global" as *;
+.cmn__title {
+  font-weight: $regular;
+  font-size: rem(20);
+  letter-spacing: 2px;
+  @include mq("md") {
+    font-size: rem(30);
+  }
+}
+
+.cmn__title-text {
+  font-size: rem(50);
+  color: #f9f871;
+  letter-spacing: 2px;
+  z-index: -1;
+  opacity: 0.5;
+  font-family: "Noto Serif JP", serif;
+  margin-top: rem(-85);
+  @include mq("md") {
+    font-size: rem(110);
+    text-align: left;
+  }
+}

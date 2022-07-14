@@ -24,13 +24,13 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- css -->
-    <link rel="stylesheet" href="./css/styles.css" />
     <!-- swiper -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- ヘッダー -->
@@ -84,7 +84,7 @@
       <!-- mv__wrap -->
       <div class="mv__wrap">
         <!-- swiper -->
-        <div class="swiper">
+        <div class="swiper swiper-mv">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="slide-img">
@@ -145,8 +145,8 @@
       <div class="content__inner">
         <!-- content__titlewrap -->
         <div class="content__titlewrap">
-          <h2 class="content__title">事業内容</h2>
-          <p class="content__title-text">Content</p>
+          <h2 class="content__title cmn__title">事業内容</h2>
+          <p class="content__title-text cmn__title-text">Content</p>
         </div>
         <!-- content__titlewrap -->
         <!-- content__list -->
@@ -193,6 +193,40 @@
       <!-- content__inner -->
     </section>
     <!-- content -->
+
+    <section class="works">
+      <div class="works__inner">
+        <h2 class="works__title cmn__title">制作実績</h2>
+        <p class="works__title-text cmn__title-text">Works</p>
+        <div class="works__wrap-flex">
+          <div class="works__wrap-left">
+            <div class="swiper swiper-works">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="/images/common/top-works-image.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/common/works-image2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/common/works-image3.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="works__wrap-right">
+            <h3 class="works__wrap-right-title">メインタイトルが入ります</h3>
+            <p class="works__wrap-right-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <div class="works__wrap-right-link cmn__link">
+              <a href="#">詳しく見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>

@@ -175,6 +175,36 @@ select::-ms-expand {
   display: none;
 }
 
+.cmn__title {
+  font-weight: 300;
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 768px) {
+  .cmn__title {
+    font-size: 1.875rem;
+  }
+}
+
+.cmn__title-text {
+  font-size: 50px;
+  font-size: 3.125rem;
+  color: #f9f871;
+  letter-spacing: 2px;
+  z-index: -1;
+  opacity: 0.5;
+  font-family: "Noto Serif JP", serif;
+  margin-top: -85px;
+  margin-top: -5.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .cmn__title-text {
+    font-size: 6.875rem;
+    text-align: left;
+  }
+}
+
 .inner {
   width: 100%;
   padding-right: 20px;
@@ -573,6 +603,161 @@ select::-ms-expand {
   .mv__article-link {
     color: #111;
   }
+}
+
+.works {
+  margin-top: 120px;
+  margin-top: 7.5rem;
+}
+@media screen and (min-width: 768px) {
+  .works {
+    padding-left: 5.625rem;
+    margin-top: 13.3125rem;
+  }
+}
+.works__title {
+  text-align: center;
+}
+.works__title-text {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .works__title-text {
+    text-align: right;
+  }
+}
+.works__wrap-flex {
+  padding-top: 50px;
+  padding-top: 3.125rem;
+}
+@media screen and (min-width: 768px) {
+  .works__wrap-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(30%, transparent), color-stop(30%, #333333), to(#333333));
+    background: linear-gradient(90deg, transparent 0%, transparent 30%, #333333 30%, #333333 100%);
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    margin-top: -1.875rem;
+  }
+}
+.works__wrap-left {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .works__wrap-left {
+    width: 50%;
+    padding-right: 2rem;
+  }
+}
+.works__wrap-right {
+  background-color: #333333;
+}
+@media screen and (min-width: 768px) {
+  .works__wrap-right {
+    width: 50%;
+    background-color: transparent;
+  }
+}
+.works__wrap-right-title {
+  text-align: center;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 768px) {
+  .works__wrap-right-title {
+    text-align: left;
+    font-size: 1.5625rem;
+    letter-spacing: 0.5px;
+  }
+}
+.works__wrap-right-text {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  letter-spacing: 2px;
+  line-height: 1.75;
+}
+@media screen and (min-width: 768px) {
+  .works__wrap-right-text {
+    margin-top: 3rem;
+    letter-spacing: 0.5px;
+  }
+}
+.works__wrap-right-link {
+  text-align: center;
+  margin-top: 16px;
+  margin-top: 1rem;
+  background-color: #333333;
+  border: 1px solid #fff;
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .works__wrap-right-link {
+    width: 22.5rem;
+    margin-top: 3rem;
+  }
+}
+.works__wrap-right-link::before {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: -1;
+}
+.works__wrap-right-link:hover {
+  background-color: #fff;
+}
+.works__wrap-right-link:hover > a {
+  color: #111;
+}
+.works__wrap-right-link:hover::before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+.works__wrap-right-link > a {
+  display: block;
+  padding-top: 10px;
+  padding-top: 0.625rem;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -17px;
+}
+
+.swiper-pagination-bullet {
+  background: #c4c4c4;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f9f871;
 }
 
 .content {

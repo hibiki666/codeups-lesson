@@ -61,7 +61,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 });
 
 // Swiper
-const swiper = new Swiper('.swiper', {
+const mv = new Swiper('.swiper-mv', {
   loop: true,
   effect: 'fade',
   autoplay: {
@@ -73,4 +73,16 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true,
   }
+});
+
+const works = new Swiper('.swiper-works', {
+  effect: 'slide',
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
 });
