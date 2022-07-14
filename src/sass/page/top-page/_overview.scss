@@ -1,9 +1,12 @@
 @use "global" as *;
-.works {
+.overview {
   margin-top: rem(120);
   @include mq("md") {
-    padding-left: rem(90);
+    padding-right: rem(90);
     margin-top: rem(213);
+  }
+  &__inner {
+
   }
 
   &__title {
@@ -13,21 +16,23 @@
   &__title-text {
     text-align: center;
     @include mq("md") {
-      text-align: right;
+      text-align: left;
     }
   }
 
   &__wrap-flex {
+    display: flex;
+    flex-direction: column-reverse;
     padding-top: rem(50);
     @include mq("md") {
-      display: flex;
+      flex-direction: row;
       align-items: center;
       background: linear-gradient(
         90deg,
-        transparent 0%,
+        #333333 0%,
+        #333333 70%,
         transparent 30%,
-        #333333 30%,
-        #333333 100%
+        transparent 100%
       );
       padding-bottom: rem(80);
       padding-top: rem(80);
@@ -36,46 +41,33 @@
   }
 
   &__wrap-left {
-    position: relative;
-    @include mq("md") {
-      width: 50%;
-      padding-right: rem(32);
-    }
-  }
-
-  &__wrap-right {
     background-color: #333333;
     padding-bottom: rem(21);
     @include mq("md") {
       width: 50%;
       background-color: transparent;
-      padding-right: rem(91);
+      padding-left: rem(91);
+      margin-right: rem(33);
     }
   }
 
-  &__wrap-right-title {
+  &__wrap-left-title {
     text-align: center;
     padding-top: rem(24);
     font-size: rem(20);
     letter-spacing: 2px;
     @include mq("md") {
       text-align: left;
-      font-size: rem(25);
-      letter-spacing: 0.5px;
     }
   }
 
-  &__wrap-right-text {
+  &__wrap-left-text {
     margin-top: rem(24);
     letter-spacing: 2px;
     line-height: 1.75;
-    @include mq("md") {
-      margin-top: rem(48);
-      letter-spacing: 0.5px;
-    }
   }
 
-  &__wrap-right-link {
+  &__wrap-left-link {
     margin-top: rem(16);
     @include mq("md") {
       width: rem(360);
@@ -83,22 +75,23 @@
     }
   }
 
-  &__wrap-right-link > a {
+  &__wrap-left-link > a {
     letter-spacing: 2px;
     font-size: rem(20);
   }
-}
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: -17px;
-}
 
-.swiper-pagination-bullet {
-  background: #c4c4c4;
-}
+  &__wrap-right {
+    @include mq("md") {
+      width: 50%;
+      padding-right: rem(32);
+    }
+  }
 
-.swiper-pagination-bullet-active {
-  background-color: #f9f871;
+  &__wrap-right-image {
+
+  }
+
+  &__wrap-right-image > img {
+
+  }
 }
