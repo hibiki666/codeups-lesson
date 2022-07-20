@@ -5,9 +5,6 @@
     padding-right: rem(90);
     margin-top: rem(213);
   }
-  &__inner {
-
-  }
 
   &__title {
     text-align: center;
@@ -43,6 +40,8 @@
   &__wrap-left {
     background-color: #333333;
     padding-bottom: rem(21);
+    padding-left: rem(20);
+    padding-right: rem(20);
     @include mq("md") {
       width: 50%;
       background-color: transparent;
@@ -85,13 +84,5 @@
       width: 50%;
       padding-right: rem(32);
     }
-  }
-
-  &__wrap-right-image {
-
-  }
-
-  &__wrap-right-image > img {
-
   }
 }

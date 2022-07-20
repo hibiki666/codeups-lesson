@@ -1,0 +1,111 @@
+@use "global" as *;
+.footer {
+  margin-top: rem(120);
+  padding-bottom: rem(48);
+  @include mq("md") {
+    margin-top: rem(150);
+    padding-bottom: rem(26);
+  }
+  &__inner {
+
+  }
+
+  &__contact {
+    background-color: #3D3D3D;
+    padding-top: rem(70);
+    padding-bottom: rem(64);
+  }
+
+  &__contact-title {
+    text-align: center;
+    @include mq("md") {
+      transform: translateY(53px);
+    }
+  }
+
+  &__contact-title-text {
+    text-align: center;
+    @include mq("md") {
+      text-align: left;
+    }
+  }
+
+  &__contact-desc {
+    margin-top: rem(20);
+    margin-bottom: rem(40);
+    line-height: 1.437;
+    letter-spacing: 2px;
+    @include mq("md") {
+      margin-top: rem(10);
+      text-align: center;
+    }
+  }
+
+  &__contact-link {
+    @include mq("md") {
+      width: 360px;
+      margin: 0 auto;
+    }
+  }
+
+  &__contact-link > a {
+    @include mq("md") {
+      font-size: rem(20);
+    }
+  }
+
+  &__nav {
+    padding-top: rem(48);
+    @include mq("md") {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+
+  }
+
+  &__logo > img {
+    display: block;
+    margin: 0 auto;
+    height: rem(40);
+    width: rem(90);
+  }
+
+  &__nav-list {
+    @include mq("md") {
+      display: flex;
+      margin-left: auto;
+    }
+  }
+
+  &__nav-item {
+    text-align: center;
+    margin-top: rem(8);
+    @include mq("md") {
+      margin-top: 0;
+    }
+  }
+
+  &__nav-item:not(:first-child) {
+    @include mq("md") {
+      margin-left: rem(32);
+    }
+  }
+
+  &__nav-item > a {
+    letter-spacing: 2px;
+  }
+
+  &__copyright {
+    text-align: center;
+    font-size: rem(11);
+    letter-spacing: 1.2px;
+    margin-top: rem(32);
+    @include mq("md") {
+      margin-top: rem(65);
+      font-size: rem(15);
+    }
+  }
+}
