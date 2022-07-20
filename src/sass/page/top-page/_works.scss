@@ -46,6 +46,8 @@
   &__wrap-right {
     background-color: #333333;
     padding-bottom: rem(21);
+    padding-left: rem(20);
+    padding-right: rem(20);
     @include mq("md") {
       width: 50%;
       background-color: transparent;

@@ -11,10 +11,17 @@
     transition: ease all .5;
     background-color: #000;
   }
+
   &__logo {
     font-size: rem(20);
     font-family: 'Playlist', serif;
     color: #fff;
+  }
+
+  &__logo > a > img {
+    display: block;
+    width: rem(80);
+    height: rem(39);
   }
 
   &__icon {

@@ -1,8 +1,51 @@
 @use "global" as *;
 .totop {
-
+  position: fixed;
+  display: block;
+  width: rem(45);
+  height: rem(45);
+  background-color: #fff;
+  z-index: 998;
+  right: rem(31);
+  bottom: rem(32);
+  transition: ease all 0.3s;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
 }
 
-.totop > img {
-  
+.totop {
+  &.is__show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.totop:hover {
+  background-color: #333333;
+  .totop__inner::before {
+    background: url(/images/common/to-top-white.png) center center no-repeat;
+    background-size: contain;
+    width: rem(24);
+    height: rem(12);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 130%);
+  }
+}
+
+.totop__inner {
+  position: relative;
+}
+
+.totop__inner::before {
+  position: absolute;
+  content: "";
+  background: url(/images/common/to-top.png) center center no-repeat;
+  background-size: contain;
+  width: rem(24);
+  height: rem(12);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 130%);
 }
