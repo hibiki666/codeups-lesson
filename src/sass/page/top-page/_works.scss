@@ -13,7 +13,8 @@
   &__title-text {
     text-align: center;
     @include mq("md") {
-      text-align: right;
+      // margin-left: rem(730);
+      padding-left: rem(700);
     }
   }
 
