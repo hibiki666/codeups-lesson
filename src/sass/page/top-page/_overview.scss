@@ -1,9 +1,28 @@
 @use "global" as *;
 .overview {
+  position: relative;
   margin-top: rem(120);
   @include mq("md") {
     padding-right: rem(90);
     margin-top: rem(213);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -10;
+    height: rem(1321);
+    width: 94%;
+    max-width: 100%;
+    // background-color: #459088;
+    left: 0;
+    top: rem(-215);
+    background-image: linear-gradient(
+      to left top,
+      transparent 49.9%,
+      #F9F871 50%,
+      #F9F871 calc(49.9% + 1px),
+      transparent calc(50.1% + 1px)
+    );
   }
 
   &__title {
@@ -13,7 +32,7 @@
   &__title-text {
     text-align: center;
     @include mq("md") {
-      text-align: left;
+      margin-right: rem(600);
     }
   }
 
