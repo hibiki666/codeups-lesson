@@ -9,8 +9,14 @@
 
   &__contact {
     background-color: #3D3D3D;
-    padding-top: rem(70);
+    padding-left: rem(20);
+    padding-right: rem(20);
     padding-bottom: rem(64);
+    padding-top: rem(67);
+    @include mq("md") {
+      padding-top: rem(85);
+      padding-bottom: rem(155);
+    }
   }
 
   &__contact-title {
@@ -23,16 +29,18 @@
   &__contact-title-text {
     text-align: center;
     @include mq("md") {
-      margin-right: rem(740);
+      margin-right: rem(660);
     }
   }
 
   &__contact-desc {
-    margin-top: rem(20);
-    margin-bottom: rem(40);
+    transform: translateY(-20px);
     line-height: 1.437;
     letter-spacing: 2px;
+    margin-top: rem(47);
+    margin-bottom: rem(31);
     @include mq("md") {
+      margin-bottom: rem(40);
       margin-top: rem(10);
       text-align: center;
     }
@@ -40,33 +48,60 @@
 
   &__contact-link {
     @include mq("md") {
+      padding-top: rem(3);
+      padding-bottom: rem(3);
+      padding-top: rem(5);
+      padding-bottom: rem(5);
       width: 360px;
       margin: 0 auto;
     }
   }
 
   &__contact-link > a {
+    letter-spacing: 2px;
     @include mq("md") {
       font-size: rem(20);
     }
   }
 
+  &__inner {
+    padding: 0 rem(32);
+  }
+
   &__nav {
-    padding-top: rem(48);
+    padding-top: rem(34);
     @include mq("md") {
+      padding-top: rem(20);
       display: flex;
       align-items: center;
     }
   }
 
-  &__logo > img {
+  &__logo {
+    text-align: center;
+    transform: translateY(18px);
+    padding-left: rem(18);
+    @include mq("md") {
+      padding-left: 0;
+      transform: translateY(4px);
+    }
+  }
+
+  &__logo > a {
     display: block;
     margin: 0 auto;
     height: rem(40);
     width: rem(90);
   }
 
+  &__logo > a > img {
+    display: block;
+    width: rem(75);
+    height: rem(30);
+  }
+
   &__nav-list {
+    margin-top: rem(4);
     @include mq("md") {
       display: flex;
       margin-left: auto;
@@ -113,7 +148,9 @@
     text-align: center;
     font-size: rem(11);
     letter-spacing: 1.2px;
-    margin-top: rem(32);
+    margin-top: rem(30);
+    padding-top: rem(5);
+    font-weight: 100;
     @include mq("md") {
       margin-top: rem(65);
       font-size: rem(15);

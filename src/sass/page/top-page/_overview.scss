@@ -1,10 +1,10 @@
 @use "global" as *;
 .overview {
   position: relative;
-  margin-top: rem(120);
+  margin-top: rem(130);
   @include mq("md") {
     padding-right: rem(90);
-    margin-top: rem(213);
+    margin-top: rem(200);
   }
   &::before {
     content: "";
@@ -13,7 +13,6 @@
     height: rem(1321);
     width: 94%;
     max-width: 100%;
-    // background-color: #459088;
     left: 0;
     top: rem(-215);
     background-image: linear-gradient(
@@ -27,12 +26,16 @@
 
   &__title {
     text-align: center;
+    @include mq("md") {
+      padding-left: rem(90);
+    }
   }
 
   &__title-text {
     text-align: center;
     @include mq("md") {
-      margin-right: rem(600);
+      margin-right: rem(500);
+      transform: translateY(-15px);
     }
   }
 
@@ -46,13 +49,13 @@
       background: linear-gradient(
         90deg,
         #333333 0%,
-        #333333 70%,
-        transparent 30%,
+        #333333 75%,
+        transparent 25%,
         transparent 100%
       );
       padding-bottom: rem(80);
       padding-top: rem(80);
-      margin-top: rem(-30);
+      margin-top: rem(-50);
     }
   }
 
@@ -62,19 +65,19 @@
     padding-left: rem(20);
     padding-right: rem(20);
     @include mq("md") {
-      width: 50%;
+      width: 58%;
       background-color: transparent;
       padding-left: rem(91);
-      margin-right: rem(33);
+      margin-right: rem(15);
     }
   }
 
   &__wrap-left-title {
     text-align: center;
     padding-top: rem(24);
-    font-size: rem(20);
     letter-spacing: 2px;
     @include mq("md") {
+      font-size: rem(25);
       text-align: left;
     }
   }
@@ -82,26 +85,33 @@
   &__wrap-left-text {
     margin-top: rem(24);
     letter-spacing: 2px;
-    line-height: 1.75;
+    line-height: 1.5;
+    @include mq("md") {
+      line-height: 1.75;
+    }
   }
 
   &__wrap-left-link {
-    margin-top: rem(16);
+    margin-top: rem(22);
+    padding-bottom: rem(3);
+    padding-top: rem(3);
     @include mq("md") {
       width: rem(360);
       margin-top: rem(48);
+      padding-top: rem(7);
+      padding-bottom: rem(7);
     }
   }
 
   &__wrap-left-link > a {
     letter-spacing: 2px;
-    font-size: rem(20);
+    font-size: rem(16);
   }
 
   &__wrap-right {
     @include mq("md") {
-      width: 50%;
-      padding-right: rem(32);
+      width: 53%;
+      // padding-right: rem(22);
     }
   }
 }

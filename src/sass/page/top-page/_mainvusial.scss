@@ -16,7 +16,10 @@
 
 .slide-img img {
   display: block;
-  height: 100vh;
+  height: rem(770);
+  @include mq("md") {
+    height: rem(851);
+  }
 }
 
 .mv {
@@ -25,30 +28,45 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -130%);
+    transform: translate(-50%, -235%);
     color: #fff;
     z-index: 10;
     @include mq("md") {
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -85%);
     }
   }
 
   &__title {
-    font-size: rem(28);
     white-space: nowrap;
+    @include mq("md") {
+      font-size: rem(50);
+    }
   }
 
   &__title-text {
-    font-size: rem(20);
     text-align: center;
-    margin-top: rem(24);
+    @include mq("md") {
+      font-size: rem(25);
+    }
+  }
+
+  &__inner {
+    width: rem(1080);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(20);
+    @include mq("md") {
+      padding: 0;
+    }
   }
 
   &__article-wrap {
-    margin-top: rem(24);
+    margin-top: rem(23);
     @include mq("md") {
+      margin-top: rem(32);
       display: flex;
       align-items: center;
+      padding-left: rem(20);
     }
   }
 
@@ -88,22 +106,25 @@
     padding-bottom: rem(5);
     padding-left: rem(21);
     white-space: nowrap;
+    width: rem(99);
   }
 
   &__article-titlewrap {
     margin-top: rem(20);
     @include mq("md") {
       margin-top: 0;
-      margin-right: rem(41);
+      margin-right: rem(48);
     }
   }
 
   &__article-title {
     line-height: 1.438;
     font-weight: $regular;
+    font-size: rem(16);
   }
 
   &__article-linkwrap {
+    max-width: 100%;
     transition: ease all 0.3s;
     margin-top: rem(28);
     border: 1px solid #fff;
@@ -116,8 +137,8 @@
     padding-bottom: rem(10);
     @include mq("md") {
       margin-top: 0;
-      padding-top: 0;
-      padding-bottom: 0;
+      padding-top: rem(3);
+      padding-bottom: rem(3);
       width: rem(134);
       white-space: nowrap;
       background-color: #fff;
@@ -150,7 +171,7 @@
   }
 
   &__article-link {
-    font-size: rem(20);
+    font-size: rem(16);
     display: block;
     height: 100%;
     width: 100%;

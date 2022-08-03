@@ -1,6 +1,9 @@
 @use "global" as *;
 .content {
   margin-top: rem(150);
+  @include mq("md") {
+    margin-top: rem(190);
+  }
   position: relative;
   &::before {
     content: "";
@@ -43,16 +46,17 @@
     margin-top: rem(-85);
     @include mq("md") {
       font-size: rem(110);
-      margin-right: rem(740);
+      margin-right: rem(660);
+      transform: translateY(-5px);
     }
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: rem(50);
+    margin-top: rem(60);
     @include mq("md") {
-      margin-top: rem(-32);
+      margin-top: rem(-40);
       flex-wrap: nowrap;
     }
   }
@@ -82,22 +86,22 @@
   }
 
   &__item:nth-child(1) {
-    background-image: url(/src/images/common/contenr-image1.jpg);
+    background-image: url(/images/common/contenr-image1.jpg);
     background-size: cover;
   }
 
   &__item:nth-child(2) {
-    background-image: url(/src/images/common/content-image2.jpg);
+    background-image: url(/images/common/content-image2.jpg);
     background-size: cover;
   }
 
   &__item:nth-child(3) {
-    background-image: url(/src/images/common/content-image3.jpg);
+    background-image: url(/images/common/content-image3.jpg);
     background-size: cover;
   }
 
   &__item:nth-child(4) {
-    background-image: url(/src/images/common/content-image4.jpg);
+    background-image: url(/images/common/content-image4.jpg);
     background-size: cover;
   }
 
@@ -113,6 +117,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: rem(20);
+    @include mq("md") {
+      font-size: rem(25);
+    }
   }
 }

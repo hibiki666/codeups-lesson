@@ -6,12 +6,16 @@
   height: rem(45);
   background-color: #fff;
   z-index: 998;
-  right: rem(31);
-  bottom: rem(32);
+  right: rem(20);
+  bottom: rem(40);
   transition: ease all 0.3s;
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
+  @include mq("md") {
+    right: rem(31);
+  bottom: rem(32);
+  }
 }
 
 .totop {

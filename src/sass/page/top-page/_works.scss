@@ -2,19 +2,27 @@
 .works {
   margin-top: rem(120);
   @include mq("md") {
-    padding-left: rem(90);
-    margin-top: rem(213);
+    margin-top: rem(200);
+  }
+
+  &__inner {
+    @include mq("md") {
+      padding-left: rem(90);
+    }
   }
 
   &__title {
     text-align: center;
+    @include mq("md") {
+      padding-right: rem(85);
+    }
   }
 
   &__title-text {
     text-align: center;
     @include mq("md") {
-      // margin-left: rem(730);
-      padding-left: rem(700);
+      padding-left: rem(660);
+      transform: translateY(-13px);
     }
   }
 
@@ -26,21 +34,21 @@
       background: linear-gradient(
         90deg,
         transparent 0%,
-        transparent 30%,
-        #333333 30%,
+        transparent 25%,
+        #333333 25%,
         #333333 100%
       );
       padding-bottom: rem(80);
       padding-top: rem(80);
-      margin-top: rem(-30);
+      margin-top: rem(-50);
     }
   }
 
   &__wrap-left {
     position: relative;
     @include mq("md") {
-      width: 50%;
-      padding-right: rem(32);
+      width: 48.5%;
+      padding-right: rem(20);
     }
   }
 
@@ -69,37 +77,49 @@
   }
 
   &__wrap-right-text {
-    margin-top: rem(24);
+    margin-top: rem(20);
     letter-spacing: 2px;
-    line-height: 1.75;
     @include mq("md") {
-      margin-top: rem(48);
+      line-height: 2;
+      margin-top: rem(40);
       letter-spacing: 0.5px;
     }
   }
 
   &__wrap-right-link {
-    margin-top: rem(16);
+    margin-top: rem(24);
     @include mq("md") {
       width: rem(360);
       margin-top: rem(48);
+      padding-top: rem(8);
+      padding-bottom: rem(8);
     }
   }
 
   &__wrap-right-link > a {
     letter-spacing: 2px;
-    font-size: rem(20);
+    @include mq("md") {
+      font-size: rem(16);
+    }
   }
 }
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: -17px;
+  bottom: -23px;
+  @include mq("md") {
+    bottom: -30px;
+    transform: translateX(-28px);
+  }
 }
 
 .swiper-pagination-bullet {
   background: #c4c4c4;
+  @include mq("md") {
+    height: 9px;
+    width: 9px;
+  }
 }
 
 .swiper-pagination-bullet-active {
