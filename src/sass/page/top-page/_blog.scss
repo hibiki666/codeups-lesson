@@ -5,6 +5,13 @@
     margin-top: rem(210);
   }
 
+  &__inner {
+    max-width: rem(600);
+    @include mq("md") {
+      max-width: 100%;
+    }
+  }
+
   &__title {
     text-align: center;
     z-index: -1;
@@ -25,7 +32,6 @@
     margin-top: rem(73);
     @include mq("md") {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
       margin-top: rem(-40);
     }

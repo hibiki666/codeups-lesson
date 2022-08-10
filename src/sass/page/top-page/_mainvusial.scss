@@ -16,10 +16,7 @@
 
 .slide-img img {
   display: block;
-  height: rem(770);
-  @include mq("md") {
-    height: rem(851);
-  }
+  height: 100vh;
 }
 
 .mv {
@@ -55,127 +52,128 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 rem(20);
+    margin-top: rem(24);
     @include mq("md") {
       padding: 0;
+      margin-top: 0;
     }
   }
 
-  &__article-wrap {
-    margin-top: rem(23);
+  &__sp-slide {
+    display: block;
     @include mq("md") {
-      margin-top: rem(32);
+      display: none;
+    }
+  }
+
+  &__pc-slide {
+    display: none;
+    @include mq("md") {
+      display: block;
+    }
+  }
+
+  &__article-block {
+    @include mq("md") {
       display: flex;
       align-items: center;
-      padding-left: rem(20);
+      margin-top: rem(33);
     }
   }
 
-  &__article-wrap > a {
-    @include mq("md") {
-      display: inline-flex;
-      align-items: center;
-    }
-  }
-
-  &__article-wrap > a:hover {
+  &__article-block:hover {
     .mv__article-title {
       text-decoration: underline;
     }
   }
 
-  &__article-datewrap {
+  &__article-date-block {
     display: flex;
     align-items: center;
-    @include mq("md") {
-      margin-right: rem(61);
-    }
+    margin-right: rem(61);
   }
 
   &__article-date {
     margin-right: rem(32);
     @include mq("md") {
-      margin-right: rem(48);
+      margin-right: rem(69);
     }
   }
 
-  &__article-tag {
-    font-size: rem(14);
+  &__article-category {
     border: 1px solid #fff;
-    padding-top: rem(5);
-    padding-right: rem(21);
-    padding-bottom: rem(5);
-    padding-left: rem(21);
+    padding: rem(5) rem(22);
+    min-width: rem(80);
     white-space: nowrap;
-    width: rem(99);
   }
 
-  &__article-titlewrap {
-    margin-top: rem(20);
+  &__article-title-block {
     @include mq("md") {
-      margin-top: 0;
       margin-right: rem(48);
     }
   }
 
   &__article-title {
-    line-height: 1.438;
     font-weight: $regular;
     font-size: rem(16);
-  }
-
-  &__article-linkwrap {
-    max-width: 100%;
-    transition: ease all 0.3s;
-    margin-top: rem(28);
-    border: 1px solid #fff;
-    background-color: #333333;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    padding-top: rem(10);
-    padding-bottom: rem(10);
+    margin-top: rem(21);
     @include mq("md") {
       margin-top: 0;
-      padding-top: rem(3);
-      padding-bottom: rem(3);
-      width: rem(134);
-      white-space: nowrap;
-      background-color: #fff;
     }
   }
 
-  &__article-linkwrap::before {
-    background: #333333;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
+  &__article-link-block {
+    text-align: center;
+    margin-left: auto;
     width: 100%;
-    height: 100%;
-    transform: scale(0, 1);
-    transform-origin: left top;
-    transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
-    z-index: -1;
+    max-width: 100%;
+    margin-top: rem(28);
+    background-color: #333;
+    @include mq("md") {
+      max-width: rem(134);
+      margin-top: 0;
+      background-color: #fff;
+      transition: ease all 0.3s;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
   }
 
-  &__article-linkwrap:hover {
-    background-color: #333333;
-    border: none;
-    & > a {
-      color: #fff;
+  &__article-link-block::before {
+    @include mq("md") {
+      background: #333;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      transform: scale(0, 1);
+      transform-origin: left top;
+      transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+      z-index: -1;
     }
-    &::before {
-      transform: scale(1, 1);
+  }
+
+  &__article-link-block:hover {
+    @include mq("md") {
+      background-color: #333;
+      & .mv__article-link {
+        color: #fff;
+      }
+      &::before {
+        transform: scale(1, 1);
+      }
     }
   }
 
   &__article-link {
-    font-size: rem(16);
+    color: #fff;
     display: block;
-    height: 100%;
-    width: 100%;
+    padding: rem(10) 0;
     @include mq("md") {
+      padding: 0 rem(26);
       color: $black;
     }
   }

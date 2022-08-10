@@ -1,5 +1,6 @@
 @use "global" as *;
 .header {
+  height: rem(50);
   @include mq("md") {
     display: flex;
     align-items: center;
@@ -15,6 +16,7 @@
     font-family: "Playlist", serif;
     color: #fff;
     font-size: rem(30);
+    height: inherit;
   }
 
   &__logo-link > img {
@@ -29,15 +31,18 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+    height: inherit;
   }
 
   &__nav-list {
     display: flex;
     align-items: center;
+    height: inherit;
   }
 
   &__nav-item {
     margin-right: rem(30);
+    height: inherit;
   }
 
   &__nav-link {
@@ -45,6 +50,9 @@
     color: #fff;
     letter-spacing: 2px;
     position: relative;
+    display: flex;
+    align-items: center;
+    height: inherit;
   }
 
   &__nav-link::after {
@@ -54,7 +62,7 @@
     width: 100%;
     height: 1px;
     background: #F9F871;
-    bottom: rem(-6);
+    bottom: 8px;
     transform: scale(0, 1);
     transform-origin: center top;
     transition: transform 0.3s;
@@ -68,6 +76,14 @@
     background-color: #fff;
     display: block;
     height: 100%;
+    transition: ease all .3s;
+  }
+
+  &__contact-linkwrap:hover {
+    background-color: #333;
+    .header__contact-link {
+      color: #fff;
+    }
   }
 
   &__contact-link {
@@ -79,5 +95,12 @@
     padding-left: rem(32);
     padding-right: rem(32);
     color: $black;
+  }
+}
+
+.js-background {
+  transition: ease all .3s;
+  &.is__background {
+    background-color: #111111;
   }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
+    <meta name=“robots” content=“noindex”>
     <!-- meta情報 -->
     <title>CodeUps</title>
     <meta name="description" content="" />
@@ -34,7 +35,7 @@
   </head>
   <body>
     <!-- ヘッダー -->
-    <header class="header u-desktop">
+    <header class="header u-desktop js-background">
       <h1 class="header__logo">
         <a class="header__logo-link" href="/">
           <img src="/images/common/header-logo.png" alt="" />
@@ -87,18 +88,33 @@
         <div class="swiper swiper-mv">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="slide-img">
+              <div class="slide-img mv__pc-slide">
                 <img src="/images/common/mv-image1.jpg" alt="img1" />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="slide-img">
+              <div class="slide-img mv__pc-slide">
                 <img src="/images/common/mv-image2.jpg" alt="img2" />
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="slide-img">
+              <div class="slide-img mv__pc-slide">
                 <img src="/images/common/mv-image3.jpg" alt="img3" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img mv__sp-slide">
+                <img src="/images/common/sp-mv-image1.jpg" alt="img3" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img mv__sp-slide">
+                <img src="/images/common/sp-mv-image2.jpg" alt="img3" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img mv__sp-slide">
+                <img src="/images/common/sp-mv-image3.jpg" alt="img3" />
               </div>
             </div>
           </div>
@@ -112,30 +128,18 @@
         <!-- mv__title-wrap -->
         <!-- inner -->
         <div class="mv__inner">
-          <!-- mv__article-wrap -->
-          <div class="mv__article-wrap">
-            <a href="#">
-              <!-- mv__article-datewrap -->
-              <div class="mv__article-datewrap">
-                <p class="mv__article-date">2020.07.20</p>
-                <p class="mv__article-tag">お知らせ</p>
-              </div>
-              <!-- mv__article-datewrap -->
-              <!-- mv__article-titlewrap -->
-              <div class="mv__article-titlewrap">
-                <h3 class="mv__article-title">
-                  記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。
-                </h3>
-              </div>
-              <!-- mv__article-titlewrap -->
-              <div class="mv__article-linkwrap">
-                <a href="#" class="mv__article-link">
-                  すべて見る
-                </a>
-              </div>
-            </a>
-          </div>
-          <!-- mv__article-wrap -->
+          <a href="#" class="mv__article-block">
+            <div class="mv__article-date-block">
+              <p class="mv__article-date">2020.07.20</p>
+              <p class="mv__article-category">お知らせ</p>
+            </div>
+            <div class="mv__article-title-block">
+              <h2 class="mv__article-title">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</h2>
+            </div>
+            <div class="mv__article-link-block">
+              <div class="mv__article-link">すべて見る</div>
+            </div>
+          </a>
         </div>
         <!-- inner -->
       </div>

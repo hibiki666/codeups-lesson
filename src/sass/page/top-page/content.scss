@@ -65,6 +65,7 @@
     width: 50%;
     height: rem(168);
     position: relative;
+    transition: ease all .3s;
     &::before {
       content: "";
       position: absolute;
@@ -73,6 +74,7 @@
       background-color: #fff;
       opacity: 0.6;
       display: none;
+      transition: ease all .3s;
     }
     @include mq("md") {
       width: 100%;
@@ -82,7 +84,6 @@
 
   &__item:hover::before {
     display: block;
-    transition: ease all .3s;
   }
 
   &__item:nth-child(1) {
