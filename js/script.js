@@ -70,6 +70,18 @@ jQuery(function ($) {
       jQuery(".totop").removeClass("is__show");
     }
   });
+
+  // mv過ぎたらヘッダーの背景色の変更
+  $(function () {
+    $(window).on("scroll", function () {
+      const sliderHeight = $(".mv").height();
+      if (sliderHeight - 30 < $(this).scrollTop()) {
+        $(".js-background").addClass("is__background");
+      } else {
+        $(".js-background").removeClass("is__background");
+      }
+    });
+  });
 });
 
 // Swiper

@@ -5,6 +5,15 @@
     margin-top: rem(210);
   }
 
+  &__inner {
+    max-width: rem(600);
+    @include mq("md") {
+      max-width: rem(1280);
+      width: 100%;
+      margin: auto;
+    }
+  }
+
   &__title {
     text-align: center;
     z-index: -1;
@@ -25,7 +34,6 @@
     margin-top: rem(73);
     @include mq("md") {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
       margin-top: rem(-40);
     }
@@ -87,6 +95,7 @@
     border-radius: 50%;
     text-align: center;
     line-height: rem(60);
+    z-index: 5;
     @include mq("md") {
     left: rem(-20);
     }
@@ -100,11 +109,21 @@
 
   &__sumbnail {
     display: block;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 66%;
+    }
   }
 
   &__sumbnail > img {
     object-fit: cover;
-    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 
   &__body {

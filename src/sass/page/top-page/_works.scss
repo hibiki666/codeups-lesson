@@ -5,32 +5,8 @@
     margin-top: rem(200);
   }
 
-  &__inner {
+  &__background {
     @include mq("md") {
-      padding-left: rem(90);
-    }
-  }
-
-  &__title {
-    text-align: center;
-    @include mq("md") {
-      padding-right: rem(85);
-    }
-  }
-
-  &__title-text {
-    text-align: center;
-    @include mq("md") {
-      padding-left: rem(660);
-      transform: translateY(-13px);
-    }
-  }
-
-  &__wrap-flex {
-    padding-top: rem(50);
-    @include mq("md") {
-      display: flex;
-      align-items: center;
       background: linear-gradient(
         90deg,
         transparent 0%,
@@ -40,6 +16,40 @@
       );
       padding-bottom: rem(80);
       padding-top: rem(80);
+    }
+  }
+
+  &__inner {
+    max-width: rem(1280);
+    width: 100%;
+    margin: auto;
+    @include mq("md") {
+      padding-left: rem(90);
+    }
+  }
+
+  &__title {
+    text-align: center;
+    @include mq("md") {
+      padding-right: rem(85);
+      transform: translateY(52px);
+    }
+  }
+
+  &__title-text {
+    text-align: center;
+    @include mq("md") {
+      padding-left: rem(660);
+      transform: translateY(33px);
+    }
+  }
+
+  &__wrap-flex {
+    padding-top: rem(50);
+    @include mq("md") {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-top: rem(-50);
     }
   }
@@ -48,17 +58,19 @@
     position: relative;
     @include mq("md") {
       width: 48.5%;
-      padding-right: rem(20);
+      margin-right: rem(32);
     }
   }
 
   &__wrap-right {
     background-color: #333333;
-    padding-bottom: rem(21);
     padding-left: rem(20);
     padding-right: rem(20);
+    padding-bottom: rem(20);
     @include mq("md") {
       width: 50%;
+      padding-bottom: rem(21);
+      padding-right: rem(20);
       background-color: transparent;
       padding-right: rem(91);
     }
@@ -124,4 +136,23 @@
 
 .swiper-pagination-bullet-active {
   background-color: #f9f871;
+}
+
+.swiper-works-item {
+  position: relative;
+  width: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    padding-top: 69%;
+  }
+}
+
+.wiper-works-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
