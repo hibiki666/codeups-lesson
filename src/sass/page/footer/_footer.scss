@@ -34,7 +34,6 @@
   }
 
   &__contact-desc {
-    transform: translateY(-20px);
     line-height: 1.437;
     letter-spacing: 2px;
     margin-top: rem(47);
@@ -66,6 +65,9 @@
 
   &__inner {
     padding: 0 rem(32);
+    max-width: rem(1280);
+    width: 100%;
+    margin: auto;
   }
 
   &__nav {
