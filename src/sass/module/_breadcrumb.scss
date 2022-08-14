@@ -1,12 +1,12 @@
 @use "global" as *;
 .breadcrumb {
-
+  margin-top: rem(16);
 }
 
 .breadcrumb a {
-
+  letter-spacing: 1px;
 }
 
 .breadcrumb span {
-  
+  margin: 0 10px;
 }

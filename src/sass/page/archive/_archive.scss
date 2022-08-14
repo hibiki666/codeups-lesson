@@ -1,37 +1,87 @@
+@use "global" as *;
 .archive {
   &__header {
+  }
 
+  &__heaeder-image {
+    background-image: url(/images/common/sp-archive-header.jpg);
+    @include mq("md") {
+      background-image: url(/images/common/archive-header.jpg);
+    }
+  }
+
+  &__header-title {
+    font-size: rem(30);
+    font-weight: $bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2px;
   }
 
   &__list {
-
+    max-width: rem(860);
+    width: 100%;
+    margin: auto;
+    margin-top: rem(85);
   }
 
   &__item {
-
+    display: block;
+    &:not(:first-child) {
+      margin-top: rem(32);
+    }
+    transition: ease all 0.3s;
+    @include mq("md") {
+      display: flex;
+    }
+    &:hover {
+      .archive__title {
+        color: #f9f871;
+      }
+    }
   }
 
   &__date-block {
-
+    display: flex;
+    align-items: center;
+    @include mq("md") {
+      margin-right: rem(61);
+    }
   }
 
   &__date {
-
+    margin-right: rem(30);
   }
 
   &__category {
-
+    font-size: rem(14);
+    border: 1px solid #fff;
+    padding: rem(5) rem(20);
+    min-width: rem(99);
   }
 
   &__title-block {
-
+    margin-top: rem(16);
+    @include mq("md") {
+      margin-top: 0;
+      width: rem(572);
+      max-width: 100%;
+    }
   }
 
   &__title {
-
+    font-weight: $normal;
+    font-size: rem(16);
   }
 
   &__pagenation {
-    
+    display: none;
+    @include mq("md") {
+      display: block;
+      text-align: center;
+      margin-top: rem(104);
+    }
   }
 }
