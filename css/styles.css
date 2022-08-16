@@ -2093,4 +2093,8 @@ select::-ms-expand {
   bottom: 0;
   right: 0;
 }
+
+.works-archive__item {
+  display: block;
+}
 /*# sourceMappingURL=styles.css.map */
