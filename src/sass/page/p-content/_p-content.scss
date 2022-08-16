@@ -1,0 +1,113 @@
+@use "global" as *;
+.p-content {
+  &__header-image {
+    background-image: url(/images/common/contenr-image1.jpg);
+    background-position: center center;
+    @include mq("md") {
+      background-image: url(/images/common/pc-p-content-header.jpg);
+      background-position: center right;
+    }
+  }
+
+  &__title {
+    margin-top: rem(85);
+    text-align: center;
+    font-weight: $regular;
+    font-size: rem(20);
+    letter-spacing: 2px;
+    @include mq("md") {
+      font-size: rem(25);
+    }
+  }
+
+  &__title-text {
+    width: rem(568);
+    max-width: 100%;
+    margin: auto;
+    margin-top: rem(24);
+    letter-spacing: 2px;
+    line-height: 1.43;
+    @include mq("md") {
+      line-height: 2.18;
+    }
+  }
+
+  &__inner {
+    max-width: rem(600);
+    width: 100%;
+    margin: auto;
+    @include mq("md") {
+      max-width: rem(1080);
+      padding-right: $padding-sp;
+      padding-left: $padding-sp;
+    }
+  }
+
+  &__wrap {
+    margin-top: rem(80);
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: rem(48);
+      @include mq("md") {
+        margin-top: rem(108);
+      }
+    }
+    @include mq("md") {
+      display: flex;
+      &:nth-child(odd) {
+        .p-content__item-textwrap {
+          margin-left: rem(30);
+        }
+      }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        .p-content__item-textwrap {
+          margin-right: rem(30);
+        }
+      }
+    }
+  }
+
+  &__image {
+    
+  }
+
+  &__image > img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__item-textwrap {
+    margin-top: rem(24);
+    padding-right: rem(20);
+    padding-left: rem(20);
+    @include mq("md") {
+      width: 100%;
+      margin-top: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  &__item-title {
+    text-align: center;
+    font-size: rem(20);
+    letter-spacing: 2px;
+    font-weight: $regular;
+    @include mq("md") {
+      text-align: left;
+      font-size: rem(25);
+    }
+  }
+
+  &__item-text {
+    margin-top: rem(24);
+    line-height: 1.43;
+    letter-spacing: 2px;
+    @include mq("md") {
+      line-height: 2.18;
+    }
+  }
+}
