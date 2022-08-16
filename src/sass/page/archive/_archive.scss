@@ -1,8 +1,5 @@
 @use "global" as *;
 .archive {
-  &__header {
-  }
-
   &__heaeder-image {
     background-image: url(/images/common/sp-archive-header.jpg);
     @include mq("md") {

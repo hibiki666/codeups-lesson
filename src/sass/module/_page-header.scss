@@ -21,3 +21,13 @@
   bottom: 0;
   right: 0;
 }
+
+.page__header-title {
+  font-size: rem(35);
+  font-weight: $bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2px;
+}
