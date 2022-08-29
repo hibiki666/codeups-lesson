@@ -110,3 +110,31 @@ const works = new Swiper(".swiper-works", {
     el: ".swiper-pagination",
   },
 });
+
+const single_works = new Swiper(".single-works__galley-slider", {
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: 6, //スライドの枚数と同じ値を指定
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const single_works_thumbs = new Swiper(".single-works__galley-thumbs", {
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  slidesPerView: 3,
+  centeredSlides: true,
+  loop: true,
+  slideToClickedSlide: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 8,
+      spaceBetween: 10,
+    }
+  }
+});
+single_works.controller.control = single_works_thumbs;
+single_works_thumbs.controller.control = single_works;
