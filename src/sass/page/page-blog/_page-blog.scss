@@ -1,0 +1,136 @@
+@use "global" as *;
+.page-blog__heaeder-image {
+  background-image: url(/images/common/blog-archive-sp-header.jpg);
+  background-position: center center;
+  @include mq("md") {
+    background-image: url(/images/common/blog-archive-sp-header.jpg);
+    background-position: center right;
+  }
+}
+
+.page-blog__inner {
+  margin: auto;
+  padding: 0 rem(20);
+  max-width: rem(600);
+  width: 100%;
+  @include mq("md") {
+    max-width: rem(1100);
+  }
+}
+
+.page-blog__wrap {
+  margin-top: rem(85);
+  @include mq("md") {
+    margin-top: rem(115);
+  }
+}
+
+.page-blog__category-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 20px;
+}
+
+.page-blog__category-link {
+  transition: ease all 0.3s;
+}
+
+.page-blog__category-link:hover {
+  background-color: #fff;
+  & > a {
+    color: $black;
+  }
+}
+
+.page-blog__category-link > a {
+  letter-spacing: 2px;
+}
+
+.page-blog__cards {
+  margin-top: rem(40);
+  @include mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.page-blog__card {
+  background-color: #fff;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  transition: ease all 0.3s;
+  @include mq("md") {
+    width: calc(33.333% - rem(73) / 3);
+  }
+}
+
+.page-blog__card:not(:first-child) {
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.page-blog__card:not(:nth-child(3n + 1)) {
+  @include mq("md") {
+    margin-left: rem(25);
+  }
+}
+
+.page-blog__card:nth-child(n + 4) {
+  @include mq("md") {
+    margin-top: rem(48);
+  }
+}
+
+.page-blog__card:hover {
+  background-color: #333333;
+  color: #fff;
+  .page-blog__card-category {
+    color: #333;
+  }
+}
+
+.page-blog__card-sumbnail > img {
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+.page-blog__card-body {
+  padding: 0 rem(24);
+  padding-top: rem(14);
+  margin-bottom: rem(14);
+}
+
+.page-blog__card-title {
+  font-weight: normal;
+  font-size: rem(18);
+  line-height: 1.94;
+}
+
+.page-blog__card-text {
+  line-height: 1.875;
+}
+
+.page-blog__card-info {
+  display: flex;
+  padding: 0 rem(24);
+  padding-bottom: rem(14);
+  margin-top: auto;
+}
+
+.page-blog__card-category {
+  background-color: #ffea2e;
+  padding: rem(5);
+}
+
+.page-blog__card-date {
+  margin-left: auto;
+}
+
+.page-blog__pagenation {
+  margin-top: rem(80);
+  text-align: center;
+}
