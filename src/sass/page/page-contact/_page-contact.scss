@@ -1,36 +1,114 @@
 @use "global" as *;
 .page-contact {
-
 }
 
 .page-contact__heaeder-image {
-
+  background-image: url(/images/common/contact-sp-header.jpg);
+  @include mq("md") {
+    background-image: url(/images/common/contact-header.jpg);
+  }
 }
 
 .page-contact__inner {
-
+  padding: 0 rem(20);
+  @include mq("md") {
+    padding: 0 rem(90);
+  }
 }
 
 .page-contact__items {
-
+  padding: 0 rem(20);
+  margin-top: rem(85);
+  @include mq("md") {
+    width: 100%;
+    max-width: rem(800);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(115);
+  }
 }
 
 .page-contact__item {
+  @include mq("md") {
+    display: flex;
+  }
+}
 
+.page-contact__item:not(:first-child) {
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(45);
+  }
 }
 
 .page-contact__label {
-
+  display: block;
+  margin-bottom: rem(16);
+  @include mq("md") {
+    margin-bottom: 0;
+    width: 20%;
+    margin-right: rem(24);
+  }
 }
 
 .page-contact__input {
-
+  background-color: #fff;
+  display: inline-block;
+  width: 100%;
+  padding: rem(10);
+  line-height: 1.85;
+  letter-spacing: 0.7px;
+  @include mq("md") {
+    width: 80%;
+  }
 }
 
 .page-contact__textarea {
+  background-color: #fff;
+  display: inline-block;
+  width: 100%;
+  resize: none;
+  padding: rem(10);
+  line-height: 1.85;
+  letter-spacing: 0.7px;
+  height: rem(256);
+  max-height: 100%;
+  @include mq("md") {
+    width: 80%;
+  }
+}
 
+.page-contact__error-text {
+  margin-bottom: rem(30);
+  color: #FF5757;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.page-contact__error-color {
+  background-color: #FFDCDC;
 }
 
 .page-contact__btn {
-  display: inline-block;
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  width: rem(360);
+  padding: rem(20) 0;
+  max-width: 100%;
+  color: $black;
+  margin-top: rem(48);
+  margin-left: auto;
+  margin-right: auto;
+  transition: ease all .3s;
+  border: 1px solid #fff;
+  @include mq("md") {
+    padding: rem(25) 0;
+    margin-top: rem(56);
+  }
+}
+
+.page-contact__btn:hover {
+  background-color: #333;
+  color: #fff;
 }

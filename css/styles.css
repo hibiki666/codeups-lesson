@@ -1520,6 +1520,148 @@ select::-ms-expand {
   text-align: center;
 }
 
+.page-contact__heaeder-image {
+  background-image: url(/images/common/contact-sp-header.jpg);
+}
+@media screen and (min-width: 768px) {
+  .page-contact__heaeder-image {
+    background-image: url(/images/common/contact-header.jpg);
+  }
+}
+
+.page-contact__inner {
+  padding: 0 20px;
+  padding: 0 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .page-contact__inner {
+    padding: 0 5.625rem;
+  }
+}
+
+.page-contact__items {
+  padding: 0 20px;
+  padding: 0 1.25rem;
+  margin-top: 85px;
+  margin-top: 5.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .page-contact__items {
+    width: 100%;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7.1875rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-contact__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.page-contact__item:not(:first-child) {
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .page-contact__item:not(:first-child) {
+    margin-top: 2.8125rem;
+  }
+}
+
+.page-contact__label {
+  display: block;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .page-contact__label {
+    margin-bottom: 0;
+    width: 20%;
+    margin-right: 1.5rem;
+  }
+}
+
+.page-contact__input {
+  background-color: #fff;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  padding: 0.625rem;
+  line-height: 1.85;
+  letter-spacing: 0.7px;
+}
+@media screen and (min-width: 768px) {
+  .page-contact__input {
+    width: 80%;
+  }
+}
+
+.page-contact__textarea {
+  background-color: #fff;
+  display: inline-block;
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  padding: 0.625rem;
+  line-height: 1.85;
+  letter-spacing: 0.7px;
+  height: 256px;
+  height: 16rem;
+  max-height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .page-contact__textarea {
+    width: 80%;
+  }
+}
+
+.page-contact__error-text {
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+  color: #FF5757;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.page-contact__error-color {
+  background-color: #FFDCDC;
+}
+
+.page-contact__btn {
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  width: 360px;
+  width: 22.5rem;
+  padding: 20px 0;
+  padding: 1.25rem 0;
+  max-width: 100%;
+  color: #111;
+  margin-top: 48px;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+  border: 1px solid #fff;
+}
+@media screen and (min-width: 768px) {
+  .page-contact__btn {
+    padding: 1.5625rem 0;
+    margin-top: 3.5rem;
+  }
+}
+
+.page-contact__btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
 .single-blog {
   padding-top: 66px;
   padding-top: 4.125rem;
