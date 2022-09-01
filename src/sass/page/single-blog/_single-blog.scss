@@ -1,0 +1,153 @@
+@use "global" as *;
+.single-blog {
+  padding-top: rem(66);
+}
+
+.single-blog__inner {
+  padding: 0 rem(20);
+}
+
+.single-blog__wrap {
+  padding: 0 rem(20);
+  max-width: rem(600);
+  width: 100%;
+  margin: auto;
+  @include mq("md") {
+    max-width: rem(800);
+  }
+}
+
+.single-blog__title-wrap {
+  margin-top: rem(78);
+}
+
+.single-title {
+  font-weight: normal;
+  line-height: 1.75;
+  letter-spacing: 0.4px;
+}
+
+.single-blog__date-wrap {
+  margin-top: rem(19);
+  display: flex;
+  align-items: center;
+}
+
+.single-blog__date {
+  margin-right: rem(24);
+  letter-spacing: 0.4px;
+}
+
+.single-blog__category {
+  letter-spacing: 2px;
+  border: 1px solid #fff;
+  padding: rem(8) rem(20);
+}
+
+.single-blog__sumbnail {
+  margin-top: rem(20);
+}
+
+.single-blog__sumbnail > img {
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+}
+
+.single-blog__body {
+  margin-top: rem(24);
+}
+
+.single-blog__body > img {
+  margin-top: rem(24);
+  display: block;
+}
+
+.single-blog__body > h2 {
+  margin-top: rem(24);
+  font-size: rem(20);
+  letter-spacing: 2px;
+  line-height: 1.4;
+  position: relative;
+  padding-left: rem(7);
+  font-weight: normal;
+}
+
+.single-blog__body > h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.single-blog__body > h3 {
+  padding-top: rem(24);
+  font-size: rem(18);
+  letter-spacing: 2px;
+  line-height: 1.44;
+  position: relative;
+  display: inline-block;
+  padding-bottom: rem(7);
+  padding-left: rem(10);
+}
+
+.single-blog__body > h3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: rem(10);
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.single-blog__body > h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: rem(10);
+  width: 30%;
+  height: 3px;
+  background-color: #FFEA2E;
+}
+
+.single-blog__body > p {
+  margin-top: rem(24);
+  line-height: 2.18;
+  letter-spacing: 0.4px;
+}
+
+.single-blog__body > ul {
+  margin-top: rem(24);
+  list-style-type: disc;
+  padding-left: rem(20);
+}
+
+.single-blog__body > ul > li {
+  line-height: 2.18;
+  letter-spacing: 0.4px;
+}
+
+.single-blog__body > ol {
+  margin-top: rem(24);
+  list-style-type: decimal;
+  padding-left: rem(20);
+}
+
+.single-blog__body > ol > li {
+  line-height: 2.18;
+  letter-spacing: 0.4px;
+}
+
+.single-blog__articles {
+  width: 100%;
+  max-width: rem(600);
+  margin: auto;
+  margin-top: rem(104);
+  padding: 0 rem(20);
+  @include mq("md") {
+    max-width: rem(1100);
+  }
+}
