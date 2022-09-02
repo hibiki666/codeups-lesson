@@ -879,6 +879,20 @@ select::-ms-expand {
   color: #fff;
 }
 
+.error-page__title {
+  font-size: 40px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  opacity: 0.6;
+  text-align: center;
+  color: #FFEA2E;
+}
+@media screen and (min-width: 768px) {
+  .error-page__title {
+    font-size: 3.75rem;
+  }
+}
+
 .footer {
   margin-top: 120px;
   margin-top: 7.5rem;
@@ -1343,6 +1357,13 @@ select::-ms-expand {
   }
 }
 
+#p-content1,
+#p-content2,
+#p-content3 {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
 .page-blog__heaeder-image {
   background-image: url(/images/common/blog-archive-sp-header.jpg);
   background-position: center center;
@@ -1401,6 +1422,8 @@ select::-ms-expand {
 
 .page-blog__category-link > a {
   letter-spacing: 2px;
+  padding: 3px 10px;
+  padding: 0.1875rem 0.625rem;
 }
 
 .page-blog__cards {
@@ -2193,6 +2216,81 @@ select::-ms-expand {
 
 .single-works__article-date {
   margin-left: auto;
+}
+
+.thanks {
+  padding-top: 130px;
+  padding-top: 8.125rem;
+  margin-bottom: 150px;
+  margin-bottom: 9.375rem;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  padding-right: 20px;
+  padding-right: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .thanks {
+    margin-bottom: 0;
+    padding-top: 12.5rem;
+  }
+}
+
+.thanks__title {
+  text-align: center;
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  line-height: 1.16;
+  font-weight: normal;
+}
+@media screen and (min-width: 768px) {
+  .thanks__title {
+    font-size: 1.875rem;
+  }
+}
+
+.thanks__text {
+  text-align: center;
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  margin-top: 80px;
+  margin-top: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .thanks__text {
+    font-size: 1.25rem;
+  }
+}
+
+.thanks__link {
+  display: block;
+  color: #fff;
+  background-color: #333;
+  text-align: center;
+  width: 360px;
+  width: 22.5rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #fff;
+  padding: 11px 0;
+  padding: 0.6875rem 0;
+  margin-top: 80px;
+  margin-top: 5rem;
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .thanks__link {
+    padding: 1.5625rem 0;
+  }
+}
+
+.thanks__link:hover {
+  background-color: #fff;
+  color: #111;
 }
 
 .blog {
