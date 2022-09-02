@@ -1357,6 +1357,13 @@ select::-ms-expand {
   }
 }
 
+#p-content1,
+#p-content2,
+#p-content3 {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
 .page-blog__heaeder-image {
   background-image: url(/images/common/blog-archive-sp-header.jpg);
   background-position: center center;
@@ -1415,6 +1422,8 @@ select::-ms-expand {
 
 .page-blog__category-link > a {
   letter-spacing: 2px;
+  padding: 3px 10px;
+  padding: 0.1875rem 0.625rem;
 }
 
 .page-blog__cards {
