@@ -879,10 +879,21 @@ select::-ms-expand {
   color: #fff;
 }
 
+.error-page__title {
+  font-size: 40px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  opacity: 0.6;
+  text-align: center;
+  color: #FFEA2E;
+}
+@media screen and (min-width: 768px) {
+  .error-page__title {
+    font-size: 3.75rem;
+  }
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   margin-top: 120px;
   margin-top: 7.5rem;
   padding-bottom: 48px;

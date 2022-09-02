@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="“robots”" content="“noindex”" />
+    <!-- meta情報 -->
+    <title>CodeUps</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header class="header u-desktop js-background">
+      <h1 class="header__logo">
+        <a class="header__logo-link" href="/">
+          <img src="/images/common/header-logo.png" alt="" />
+        </a>
+      </h1>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="/single-bolg.html" class="header__nav-link">お知らせ</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="/p-content.html" class="header__nav-link">事業内容</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="/works-archive.html" class="header__nav-link">制作実績</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="/company.html" class="header__nav-link">企業概要</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="/blog.html" class="header__nav-link">ブログ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contact-linkwrap">
+        <a href="/contact.html" class="header__contact-link">お問い合わせ</a>
+      </div>
+    </header>
+    <!-- ヘッダー -->
+    <!-- ハンバーガーメニュー -->
+    <div class="drawer u-mobile">
+      <h1 class="drawer__logo">
+        <a href="#"><img src="/images/common/header-logo.png" alt="" /></a>
+      </h1>
+      <div class="drawer__icon">
+        <div class="drawer__icon-bars">
+          <div class="drawer__icon-bar drawer__icon-bar1"></div>
+          <div class="drawer__icon-bar drawer__icon-bar2"></div>
+          <div class="drawer__icon-bar drawer__icon-bar3"></div>
+        </div>
+      </div>
+      <div class="drawer__content">
+        <div class="drawer__content-list">
+          <div class="drawer__content-item"><a href="#">トップ</a></div>
+          <div class="drawer__content-item">
+            <a href="/archive.html">お知らせ</a>
+          </div>
+          <div class="drawer__content-item">
+            <a href="/p-content.html">事業内容</a>
+          </div>
+          <div class="drawer__content-item">
+            <a href="/works-archive.html">制作実績</a>
+          </div>
+          <div class="drawer__content-item"><a href="#">企業概要</a></div>
+          <div class="drawer__content-item"><a href="#">ブログ</a></div>
+          <div class="drawer__content-item"><a href="#">お問い合わせ</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- ハンバーガーメニュー -->
+
+    <div class="thanks">
+      <div class="thanks__inner">
+        <p class="error-page__title">404 Not Found</p>
+        <p class="thanks__text">お探しのページは見つかりませんでした。</p>
+        <a href="#" class="thanks__link">TOPへ</a>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__inner inner">
+        <!-- footer__nav -->
+        <div class="footer__nav">
+          <div class="footer__logo">
+            <a href="#">
+              <img src="/images/common/footer-logo.png" alt="codeupsのロゴ" />
+            </a>
+          </div>
+          <!-- footer__nav-list -->
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">トップ</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">お知らせ</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">事業内容</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">企業概要</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">ブログ</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">お問い合わせ</a>
+            </li>
+          </ul>
+          <!-- footer__nav-list -->
+        </div>
+        <!-- footer__nav -->
+        <p class="footer__copyright">&copy; 2021 CodeUps Inc.</p>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <div class="totop">
+      <a href="#">
+        <div class="totop__inner"></div>
+      </a>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,8 +1,5 @@
 @use "global" as *;
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   margin-top: rem(120);
   padding-bottom: rem(48);
   @include mq("md") {
