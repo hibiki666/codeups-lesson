@@ -2053,6 +2053,12 @@ select::-ms-expand {
   height: 100%;
 }
 
+.single-works__galley-thumbs--child {
+  height: 163px;
+  height: 10.1875rem;
+  max-height: 100%;
+}
+
 .single-works__wrap {
   margin-top: 80px;
   margin-top: 5rem;
